@@ -1,0 +1,26 @@
+% !TeX root = ./index.tex
+
+\documentclass[a4paper]{article}
+\input{configs/common.config.tex}
+
+\title{}
+\author{tanski.gustaw}
+\date{2020}
+
+\begin{document}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definicja}
+\newtheorem{theorem}{Twierdzenie}
+\numberwithin{equation}{section}
+\pagestyle{empty}
+
+\newgeometry{
+    tmargin=2cm,
+    bmargin=2cm, 
+    lmargin=2cm, 
+    rmargin=2cm
+}
+
+\subfile{lectures/1.tex}
+\end{document}
