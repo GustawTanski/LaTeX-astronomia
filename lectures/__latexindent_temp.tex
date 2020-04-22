@@ -2,64 +2,50 @@
 \documentclass[../index.tex]{subfiles}
 
 \begin{document}
-    \section{Wykład 6} 
-        \subsection{Wnętrze gwiazdy}
-            \subsubsection{Ciśnienie, temperatura, gęstość}
-                Wnętrze gwiazdy zaczyna się u podstawy fotosfery \--- miejsca gdzie ośrodek staje się nieprzezroczysty dla promieniowania. Do tego punktu światło dociera z wnętrza poprzez wielokrotne procesy absorbcji i emisji. O warunkach panujących we wnętrzu gwiazdy można dowiedzieć się na podstawie ogólnych praw opisujących budowę gwiazdy. Jednym z nich jest \textbf{równanie równowagi termodynamicznej} \--- w każdym punkcie gwiazdy ciśnienie (głównie termiczne) i siła grawitacji równoważą się:
-                \begin{equation}
-                    \frac{dp}{dr} = -\rho g
-                \end{equation}
-                gdzie \(\rho\) \--- gęstość, \(p\) \--- ciśnienie a \(g = G \frac{M_r}{r^2 } \) to przyspieszenie grawitacyjne. Powyższe wyrażenie jest prawidłowe przy założeniu idealnej kulistości gwiazdy. Wszystkie parametry zmieniają się wraz z \(r\). Gdyby gwiazdy nie podlegały równowadze hydrodynamicznej to wówczas zapadałyby się w bardzo krótkim czasie (dynamiczna skala czasowa ewolucji gwiazdy):
-                \begin{equation}
-                    t_\text{dyn} = \sqrt{\frac{2}{G}} R^{1.5}M^{-0.5} 
-                \end{equation}
-                Dla słońca \(t_\text{dyn}\) wynosi około pół godziny. Na podstawie równania równowagi termodynamicznej można oszacować ciśnienie wewnątrz słońca. Zmieniając różniczkę na różnice ciśnień na powierzchni i wewnątrz gwiazdy oraz wstawiając po prawej stronie uśrednioną gęstość i przyspieszenie grawitacyjne na panujące na powierzchni słońca otrzymuje się wzór:
-                \begin{equation}
-                    p_c \sim \frac{GM^2 }{\frac{4}{3}\pi R^{4}} \sim 10^{15}\: Pa \label{eq:star_pressure}
-                \end{equation}
-                Otrzymany wynik jest ponad dwudziestokrotnie niższy od rzeczywistego, ale daje pojęcie o rzędzie wielkości. W podobny sposób, korzystając z \textbf{równania gazu doskonałego}:
-                \begin{equation}
-                    p = \frac{k_B}{\mu m_u} \rho T
-                \end{equation}
-                gdzie \(\mu\) \--- średni ciężar cząsteczkowy w atomowych jednostkach masy. Po przekształceniu wzoru i wykorzystaniu wzoru \ref{eq:star_pressure} otrzymuje się:
-                \begin{equation}
-                    T_c = \mu_c \frac{m_u}{k_B} G \frac{M}{R} = 1.9 \cdot 10^{7}\: K
-                \end{equation}
-                Powyższy wynik jest znów zawyżony o \(3.5 \cdot 10^{6}\: K\). Idąc dalej można wyznaczyć gęstość \(\rho_c = 60000\: \frac{kg}{m^3 }\) i to ponownie \(2.5\) raza zaniżony wynik względem dokładniejszych modeli.
-            \subsubsection{Źródło energii}
-                Źródłem energii gwiazdy jest fuzja termojądrowa zachodzące w jego wnętrzu. Można by się spodziewać, że tak ekstremalne warunki jak wyliczone powyżej pozwalają pokonać siły odpychające od siebie cząstki i łączenie się ich (synteza jądrowa). Energia wydzielona w takim procesie związana jest z \textbf{defektem masy} \--- różnicą pomiędzy masą produktów i substratów (ta różnica to właśnie energia syntezy). Synteza zachodzi dla jąder lekkich (lżejszych niż żelazo). Energia potrzebna do zbliżenia do siebie dwóch protonów to \(1\: MeV\), natomiast w temperaturze \(15\: MK\) średnia temperatura (rozkład Maxwella\--Boltzmanna) wynosi \(1\: keV\). Zgodnie z tym samym rozkładem cząstek praktycznie nie ma w słońcu cząstek, które przekraczają megaelektronowolt. Jednak protonu, jako obiekty kwantowe, mogą przez barierę oddziaływania elektrostatycznego tunelować. Największe znaczenie w fuzji jądrowej mają protony z takiego przedziału energii, że rozkład Maxwella\--Boltzmanna i rozkład prawdopodobieństwa przetunelowania splatają się
-                \begin{center}
-                    \includegraphics[width=12cm]{images/pikGamowa.png}  
-                \end{center}
-                Obszar ten nosi miano \textbf{piku Gamowa}.\\
-                Do powstania jądra helu potrzeba czterech protonów, lecz jest bardzo mało prawdopodobne, żeby cztery protony z piku Gamowa jednocześnie się zetknęły. Jednak zachodzą reakcje pośrednie. Rozróżniamy dwa możliwe łańcuchy reakcji \(pp\)(proton\-proton) i \textbf{CNO} (węglowo-azotowo-tlenowy):
-                \begin{center}
-                    \includegraphics[width=15cm]{images/ppSynteza.png}
-                \end{center}
-                \begin{center}
-                    \includegraphics[width=15cm]{images/CNOSynteza.png}
-                \end{center}
-                Energia wydzielona w reakcjach syntezy unoszona jest przez produkty reakcji i (z wyjątkiem neutrina) przekazywana jest ośrodkowi. Energia zależy od rodzaju reakcji, a dokładniej od wielkości defektu masy. Tempo zachodzenia reakcji zależy od warunków panujących wewnątrz jądra gwiazdy. Poniżej wzory pozwalające je obliczyć:
-                \begin{equation}
-                    \varepsilon_\text{pp} \approx 120 \autoround{\frac{X_H}{0.5} }^2 \autoround{\frac{\rho}{10^{5}\:m^{-3}}}\autoround{\frac{T}{15\cdot 10^6\:K}}^4\: Wm^{-3}
-                \end{equation}
-                \begin{equation}
-                    \varepsilon_\text{CN} \approx 2\autoround{\frac{X_H}{0.5}}\autoround{\frac{X_{N14}}{0.006} }\autoround{\frac{\rho}{10^5\: m^{-3}} }\autoround{\frac{T}{15\cdot 10^6\:K}}^{16} Wm^{-3}
-                \end{equation}
-                gdzie \(X_H\) i \(X_{N{14}}\) określają obfitość występowania wodoru i azotu czternaście. W przypadku słońca 99\% energi dostarcza cykl pp a 1\% cykl CNO. Ten stosunek zależy od temperatury:
-                \begin{center}
-                    \includegraphics[width=15cm]{images/cykleSynteza.png}
-                \end{center}
-                Jako że tempo reakcji termojądrowych wpływa na parametry gwiazdy, to w gwiazdach ustala się stan równowagi \--- taki, że produkowana energia może być odprowadzona w takim tempie, żeby nie zmieniać warunków. Jeśli jednak zabraknie gwieździe paliwa, to wówczas żeby móc wykorzystywać inne paliwo zmieniają się warunki panujące w gwieździe (punkt równowagi przesuwa się).\\
-                To na ile wystarcza gwieździe paliwa wodorowego określa \textbf{nuklearna skala czasowa}. Dla gwiazd ciągu głównego opisywana jest wzorem:
-                \begin{equation}
-                    \tau_\text{nuc} \approx 10^{10}\text{lat} \cdot \frac{M}{M_\odot} \cdot \frac{L_\odot}{L} = 10^{10}\text{lat} \cdot \autoround{\frac{M}{M_\odot}}^{-2.8}
-                \end{equation}
-                Dla słońca ten czas wynosi około 10 miliardów lat. Ze wzoru wynika, że gwiazdy masywne przebywają na ciągu głównym znacznej krócej niż gwiazdy mało masywne (np. czerwone karły).
-        \subsection{Transport energii w gwiazdach}
-            Transport energii z wnętrza gwiazd na jego powierzchnie może zachodzić na kilka sposobów jednak najważniejsze to \textbf{transport promienisty} i \textbf{konwekcja}.
-            \subsubsection{Transport promienisty}
-                Za ten rodzaj transportu odpowiedzialne są wielokrotnie pochłaniane i ponownie emitowane fotony. Czas jaki zajmuje fotonowi dotarcie na powierzchnie w przypadku Słońca to kilka milionów lat. Przez ten okres foton jest pochłaniany i emitowany \(\sim 10^{22}\) razy. W rezultacie fotony opuszczające gwiazdę są 4-6 rzędów wielkości mniej energetyczne niż te wyemitowane w wyniku syntezy jądrowej. Przepływ energii traktuje się jako proces dyfuzyjny i korzystając z m. in. \textbf{prawa Ficka}.
-            \subsubsection{Konwekcja}
-                Konwekcja polega na turbulentnych ruchach materii, konsekwencją których jest odprowadzenie energii z obszaru, w którym jest jej za dużo. Konwekcja, w odróżnieniu od transportu promienistego pozwala odprowadzić dowolnie dużą nadwyżkę energii \--- jest więc głównym mechanizmem transportu energii w gwiazdach, gdy konieczne jest odprowadzenie dużej ilości energii. L
+    \section{Wykład}
+        \subsection{Konstruowanie modelu gwiazdy}
+            Metoda konstruowania modelu wnętrza gwiazdy bazuje na równaniach zachowania: masy, energii i pędu. Na ich podstawie oraz założenie, że gwiazda jest zbiorem koncentrycznych powłok sferycznych o grubości \(dr\) konstruuje się pięc równań różniczkowych:
+            \begin{align}
+                \frac{dP(r)}{dr} &=  -\rho(r)G \frac{M(r)}{r^2 } \text{ — zasada zachowania pędu (równanie równowagi termodynamicznej)}\\
+                \frac{dM(r)}{dr} &=  4\pi r^2 \rho(r) \text{ — zasada zachowania masy} \\
+                \frac{dL(r)}{dr} &= 4\pi r^2 \rho(r)\varepsilon(\rho,T) \text{ — zasada zachowania energii}\\
+                \frac{dT(r)}{dr} &= - \frac{3}{16\pi} \frac{\kappa}{\sigma_B T^3 }\frac{L(r)}{r^2 } \text{ — zasada zachowania energii (transport promienisty)} \\
+                \frac{dT(r)}{dr} &= - \frac{\mu m_u}{\kappa} \autoround{1 - \frac{1}{\gamma(\rho,T)}} G \frac{M(R)}{r^2 } \text{ — zasada zachowania energii (transport konwektywny)} 
+            \end{align}
+            gdzie \(\rho\) – gęstość, \(\varepsilon\) – ilość energii wydzielonej w reakcjach termojądrowych w jednostce czasu na jednostkę objętości, \(\kappa\) – współczynnik absorbcji ośrodka, \(\mu\) – średni ciężar cząsteczkowy, \(m_u\) – atomowa jednostka masy. Czwarte i piąte równanie stosuje się zamiennie w zależności od tego jaki typ transportu energii dominuję – promieniowanie czy konwekcja. Warunkami brzegowymi są wartości parametrów na powierzchni gwiazdy (możliwe do zaobserwowania bezpośrednio):
+            \begin{align*}
+                T(R) &=  T_\text{eff} \\
+                P(R) &= P_s \\
+                L(R) &= L \\
+                M(R) &=  M
+            \end{align*}
+            W praktyce tworzenie modelu polega na wyliczaniu kolejnych wartości każdego z parametrów na kolejnych powłokach (\(dr\) skończenie małe?).
+        \subsection{Części Słońca}
+            Na podstawie przeprowadzonych modelowań, we wnętrzu Słońca wyróżnia się trzy zasadnicze części:
+            \begin{enumerate}
+                \item \textbf{Jądro} – dla \(r \leq 0.3 R_\odot\). Temperatura przekraczająca 7 milionów kelwinów umożliwia zachodzenie reakcji termojądrowych syntezy helu. Skład chemiczny jądra znacznie różni się od składu fotosfery – to wynik procesów termojądrowych, które obniżają stężenie wodoru na rzecz helu.
+                \item \textbf{Otoczka promienista} – dla \(r\in\{0.3 R_\odot, 0.72 R_\odot\}\). Nie zachodzą tu reakcje termojądrowe, a transport energii zachodzi w formie promienistej.
+                \item \textbf{Otoczka konwektywna} zajmuje zewnętrzną powłokę słońca. Stosunkowo niska temperatura (2 mln \(K\)) powoduje wzrost współczynnika absorbcji i blokuje większość transportu promienistego. Ta warstwa zawiera około \(2\%\) masy słońca i około \(\frac{2}{3}\) jego objętości.
+            \end{enumerate} 
+            Oczywiście nie istnieje jeden właściwy model Słońca. Różne podejścia różnią się pewnymi szczegółami.
+        \subsection{Zależność budowy gwiazdy od jej masy}
+            W celu stworzenia modelu, który nie zaniedbuje zmiany składu chemicznego w wyniku starzenia się gwiazdy wprowadza się pojęcie \textbf{ZAMS} tzn. gwiazd ciągu głównego o zerowym wieku. Im gwiazda bardziej masywna tym cieplejsza i, oprócz wyjątków, mnie gęsta. Wyższa temperatura przekłada się na większe tempo zachodzenia reakcji termojądrowych. Gdy porówna się słońce z dziesięciokrotnie cięższą gwiazdą, to podaż energii w centralnej części tej drugiej jest kilka tysięcy razy większa. Zależność gęstości od temperatury obrazuje poniższy wykres:
+            \begin{center}
+                \includegraphics[width=13cm]{images/temperatura-gestosc-relacja.png}
+            \end{center}
+            Jak widać gęstość spada wraz ze wzrostem temperatury dla niemal wszystkich mas — jedynie te z przedziału od \(0.3 M_\odot\) do \(1.4 M_\odot\) nie zmieniają swojej gęstości wraz ze wzrostem temperatury. Wyjaśnienia tego efektu można doszukiwać się na poniższym wykresie:
+            \begin{center}
+                \includegraphics[width=15cm]{images/budowaGwiazdZAMS.png}
+            \end{center}
+            Powyżej białe tło oznacza dominacje transportu promienistego, a tło ,,kłaczkowate'' dominacje transportu konwektywnego. Na osi OX mamy stosunek masy gwiazdy do masy Słońca, a na osi OY takie położenia w gwieździe, że np. 0.5 oznacza, że ,,pod stopami'' znajduje się \(50\%\) masy gwiazdy. Linie \(0.5 L\), \(0.9 L\) wyznaczają obszary, które generują odpowiednio \(50\%\) i \(90\%\) światłości gwiazdy, a \(0.25R\) i \(0.5R\) odpowiednio \(\frac{1}{4}\) i \(\frac{1}{2}\) promienia gwiazdy. Jak widać istnieją dwa obszary występowania transportu konwekcyjnego : 
+            \begin{itemize}
+                \item w przypadku gwiazd masywnych \(M > 1.4 M_\odot\) konwekcja obejmuje jądro, ponieważ transport promienisty nie jest w stanie odprowadzić całkowitej tworzącej się tam energii. Dla gwiazd o jeszcze większej masie konwekcja obejmuje również fragment otoczki przylegającej do jądra.
+                \item w przypadku gwiazd o mniejszych masach konwekcja pojawia się w zewnętrznej części otoczki. Im mniejsza masa tym konwekcja sięga coraz głębiej, aż dla \(M < 0.3 M_\odot\) gwiazda staje się całkowicie konwektywna. W tym przypadku kownekcja wynika z wysokiej nieprzezroczystości ośrodka.
+            \end{itemize}
+            Jak widać nietypowe zachowanie dotyczy gwiazd o masach z przedziału \(0.3\)-\(1.4 M_\odot\), a więc z transportem promienistym w obszarze jądra.
+        \subsection{Mierzenie wnętrz gwiazdowych}
+            Mimo, że nieprzezroczyste dla fotonów, wszystkie warstwy słońca są przezroczyste dla neutrin – słabo oddziałujących z materią cząstek elementarnych, które powstają w procesach termojądrowych. Na szczęście neutrina da się rejestrować różnorakimi detektorami. Zwykle wymagają one ogromnych przestrzeni (bo słabe oddziaływanie) i są umieszczone głęboko pod ziemią (żeby szumy z powierzchni Ziemi nie wpływały na pomiary – tylko neutrina dotrą tak głęboko). Jednak pierwsze pomiary neutrin bardzo mocno różniły się od przewidywań teoretycznych. Problem ten nazwano \textbf{deficytem neutrin słonecznych}. Jednakże do tych pomiarów użyto detektorów mogących mierzyć jedynie \textbf{neutrina elektronowe} (tylko takie powstawały w wyniku reakcji termojądrowych, więc wątpliwości były uzasadnione). Użycie detektorów oddziałujących także z neutrina \textbf{mionowymi} i \textbf{taonowymi} wykazywały zgodność z teoretycznymi wyliczeniami. Efekt ten wynika z faktu, że mimo tego, że wszystkie neutrina powstałe w słońcu to neutrina elektronowe, to mogą one przekształcać się w pozostałe dwa typy. Zjawisko to nosi miano \textbf{oscylacji neutrin} i jest dowodem na masowość tychże.
+        \subsection{Chromosfera}
+            Innym testem na poprawność modeli wnętrz gwiazdowych są obserwacje wskazujące na obecność \textbf{chromosfery} tylko w przypadku niektórych typów gwiazd ciągu głównego. Chromosferę można zaobserwować bezpośrednio na Słońcu oraz dowiedzieć się o jej istnieniu na podstawie analizy widma. Chromosfera to obszar atmosfery słońca, w którym temperatury rośnie ze wzrostem odległości od powierzchni (zamiast maleć). Jej obecność jest słabo widoczna w widmie ze względu na znacznie niższą gęstość. Jednakże w zakresach promieniowania innych niż widzialne, nieprzezroczystość atmosfery słońca jest znacznie większa i promieniowanie wydostaje się swobodnie dopiero na poziomie chromosfery (co umożliwia jej obserwacje). \\
+            Chromosfera występuje jedynie dla gwiazd ciągu głównego o masie mniejsze niż \(1.4 M_\odot\). Gwiazdy te charakteryzuje obecność warstwy konwektywnej zlokalizowanej przy powierzchni gwiazdy. Ruchy materii towarzyszące konwekcji generują sz
 \end{document}
