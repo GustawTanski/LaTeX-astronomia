@@ -1,54 +1,67 @@
 % !TeX root = ../index.tex
 \documentclass[../index.tex]{subfiles}
+
 \begin{document}
     \section{Wykład}
-        Gwiazdy kończą swoję życie jako białe karły, gwiazdy neutronowe lub czarne dziury w większości w zależności od masy:
-        \begin{itemize}
-            \item do 9-10 mas Słońca \( \to \) biały karzeł
-            \item od 10 do 25-40 mas Słońca \(\to \) gwiazda neutronowa
-            \item od 25-40 mas Słońca \(\to \) czarna dziura
-        \end{itemize}
-        \subsection{Białe karły}
-            Białe karły zbudowane są z bardzo gęsto upakowanej masy, np. Syriusz B ma rozmiary Ziemi i masę słońca. Wykazują one zależność masy i promienia (\(M\sim R^{ - \frac{1}{3}}\)) oraz istnieje pewna maksymalna masa białego karła, powyżej której zapada się on grawitacyjnie do gwiazdy neutronowej. Wielkość ta nosi nazwę \textbf{masy Chandrasekhara}:
-            \begin{equation}
-                M_\text{Ch} =\autoround{\frac{5.75}{\mu_e^2}}M_\odot
-            \end{equation}
-            Dla \(\mu_e = 2\)(ciężar cząsteczkowy w przeliczeniu na jeden elektron) otrzymuje się wynik \(M_\text{Ch} = 1.44M_\odot\). Zbudowane są one ze zdegenerowanej materii i otaczjącej jej cienkiej warstwy zwykłego gazu. Białe karły charakteryzuje niska moc promieniowania. Białe karły można klasyfikować na podstawie ich widma:
-            \begin{itemize}
-                \item DA – tylko linie balmera
-                \item DB – tylko linie He I
-                \item DC – żadnych linii
-                \item DO – wyróżnia się linie He II
-                \item DZ – tylko linie metali
-                \item DQ – wyróżnia się linie węgla
-            \end{itemize}
-            Linie tych widm są bardzo szerokie, co wskazuje na wysokie wartości ciśnienia. Najwięcej jest biały karłów w przedziale mas \(0.5 - 0.8 M_\odot\), a ich temperatura jest raczej niższa niż \(7000\:K\)/. Białe karły święcą kosztem swojej energii wewnętrznej w wyniku czego stygną. W miarę tego procesu materia we wnętrzu karła zaczyna wykazywać cechy najpierw cieczy, a później ciała stałego – następuje krystalizacja. Moc promieniowania także się zmienia – maleje wraz ze stygnięciem. Mierząc liczność białych karłów o różnej mocy promieniowania  można mierzyć wiek gromad gwiazd. Im więcej słabo świecących karłów tym starsza.
-        \subsection{Gwiazdy neutronowe}
-            Nie wiemy dokładnie jak zbudowane są gwiazdy neutronowe – wciąż trwają prace nad modelami, które będą jednocześnie dobrze odzwierciedlały dane obserwacyjne jak i wykorzystywały wiedzę na temat egzotycznych stanów materii. Można mówić o dwóch klasach modeli \textbf{minimalnych} i \textbf{egzotycznych}. W obu przypadkach wyróżnia się \textbf{skorupę}, \textbf{płaszcz} i \textbf{jądro}, a głównym składnikiem gwiazdy jest zdegenerowana ciecz neutronowa wykazująca cechy nadciekłości.
-            \begin{itemize}
-                \item model minimalny:
-                \begin{center}
-                    \includegraphics[width=11cm]{images/gwiazdaNeutronowaModelMinimalny.png}
-                \end{center}
-                \item model egzotyczny:
-                \begin{center}
-                    \includegraphics[width=15cm]{images/gwiazdaNeutronowaModelEgzotyczny.png}
-                \end{center}
-            \end{itemize}
-            Podobnie jak białe karły wykazują zależność promień-masa, a po przekroczeniu maksymalnej masy – \textbf{masy Tolmana–Oppenheimera-Volkoffa} następuje kolaps do czarnej dziury. Różne model podają różne masy krytyczne. Większość modeli pokazuje, że gwiazdy neutronowe nie przekraczają dwóch mas słońca, ale pojedyncze obserwacje sugerują istnienie takich osiągających trzy masy słońca i dopiero tą wartość uznaje się za próg mas gwiazd neutronowych. Gwiazdy neutronowe także stopniowo stygną emitując promieniowania kosztem energii wewnętrznej. Ze względu na bardzo niewielkie rozmiary (rzędu kilkunastu kilometrów) rotacja gwiazd neutronowych może osiągać zawrotne prędkości. Dodatkowo wytwarzają one silne pola magnetyczne. Te dwie cechy powodują, że cząstki naładowane uwięzione w ich polu elektryczny emitują \textbf{promieniowanie synchrotronowe} – najsilniejsze w okolicach biegunów magnetycznych – gwiazda jest \textbf{pulsarem}. Pulsar to obiekt astronomiczny emitujący regularne nietermiczne impulsy elektromagnetyczne (\textbf{pulsar milisekundowy} to taki pulsar, w którym odstępy pomiędzy kolejnym impulsami są rzędu milisekund, a czas trwania impulsu jest długi w porównaniu do tej przerwy).
+        \subsection{Układy podwójne}
+            Często występującym układem gwiazd są układy podwójne. W zależności od odległości od siebie ewolucja tych gwiazd może być identyczna jak gwiazd samotnych jak i silnie zaburzona obecnością sąsiada. Niech \(M_1\), \(M_2\) to masy gwiazd, które rotują z prędkością kątową \(\omega\) wokół środka masy znajdującego się w odległości odpowiednio \(r_1\) i \(r_2\). Na punkt materialny \(m\) działają sił \(F_g\) (grawitacji) i \(F_c\) (siła odśrodkowa). Związane z tymi siłami potencjały oznaczone są odpowiednio \(\phi_g\) i \(\phi_c\), a ich suma, zwana \textbf{potencjałem efektywnym} – \(\phi\). Punkt \(m\) znajduje się w odległościach \(s_1\) i \(s_2\) od gwiazd:
+            \begin{align}
+                F_c &=  m\omega^2 r\\
+                \phi_c &=  - \frac{1}{2}m\omega^2  r^2 \\
+                F_g &=  Gm\autosquare{\frac{M_1}{s_1^2 } +\frac{M_2}{s_2^2 } }\\
+                \phi_g &= - G \autoround{\frac{M_1m}{s_1} + \frac{M_2m}{s_2}  } \\
+                \phi &=  - G\autoround{\frac{M_1m}{s_1} +\frac{M_2m}{s_2}  } - \frac{1}{2}m\omega^2 r^2 
+            \end{align}
+            Poniżej obraz linii ewkipotencjalnych przykładowego układu podwójnego. 
             \begin{center}
-                \includegraphics[width=13cm]{images/pulsar.png}
+                \includegraphics[width=13cm]{images/ukladPodwojnyPotencjal.png}
             \end{center}
-            W skutek powolnego wytracania momentu pędu przez pulsar, jego okres się wydłuża. Nie obserwuje się pulsarów o okresach dłuższych o kilka sekund (gwiazdy neutronowe tak stare, że ich okres miałby taką wartość przestają efektywnie produkować promieniowania synchrotronowe).
-        \subsection{Czarne dziury}
-            Powstają w wyniku kolapsu gwiazdy do jednego punktu – \textbf{osobliwości}. Osobliwości nie można dostrzec bezpośrednio, ponieważ otacza ją przestrzenie ograniczona \textbf{horyzontem zdarzeń} – obszar z którego druga prędkość kosmiczna (prędkość ucieczki) jest większa niż prędkość światła – na zewnątrz nie może wydostać się żadna informacja. W modelu nierotującej \textbf{czarnej dziur Schwarzschilda} promień horyzontu zdarzeń jest równy \textbf{promieniowi Schwarzschilda}:
-            \begin{equation}
-                r_s = \frac{2 G M}{c^2 } 
-            \end{equation}
-            W przypadku rotującej czarnej dziury stosuje się model \textbf{czarnej dziury Kerra}. Ta posiada dwa horyzonty zdarzeń – jeden wewnętrzny i sferyczny oraz drugi – zewnętrzny i elipsoidalny. Strefa pomiędzy nimi nosi nazwę \textbf{egzosfery} i może z niej wydostawać się promieniowanie, ale jest zmuszona do rotowania razem z czarną dziurą. Czarną dziurę można zaobserwować na jeden z trzech sposobów:
+            Zielona, niepodpisana strzałka wskazuje na punktu \(L_1\) – punkt Lagrange 1. Jest to punkt lokalnego maksimum potencjału (jest ich więcej). Powierzchnie ekwipotencjalne przecinające się w \(L_1\) noszą nazwę \textbf{krytycznych powierzchni Roche'a}. Wszystkie punkty materialne znajdujące się wewnątrz tych powierzchni są związane z jedną z gwiazd, natomiast punkty na zewnątrz są związane z układem jako z całością. Jeśli jedna z gwiazd będzie wystawać poza krytyczne powierzchnie Roche'a, to wówczas zacznie tracić swoją materię na rzecz sąsiada. Ze względu na to zjawisko układy podwójne dzieli się na:
             \begin{itemize}
-                \item w wyniku ugięcia czasoprzestrzeni czarna dziura może działać jak soczewka 
-                \item poprzez detekcje fal grawitacyjnych wywołanych zjawiskiem połączenia się dwóch czarnych dziur
-                \item obserwacje akrecji materii (opadania materii) na czarną dziurę (dotyczy układów podwójnych).
+                \item układy rozdzielone
+                \begin{center}
+                    \includegraphics[width=10cm]{images/ukladPodwojnyRozdzielone.png}
+                \end{center}
+                \item układy półrozdzielone
+                \begin{center}
+                    \includegraphics[width=10cm]{images/ukladPodwojnyPolrozdzielone.png}
+                \end{center}
+                \item układy kontaktowe
+                \begin{center}
+                    \includegraphics[width=10cm]{images/ukladPodwojnyKontaktowe.png}
+                \end{center}
             \end{itemize}
+            Należy pamiętać, że w wyniku ewolucji gwiazd ich masa i rozmiar zmieniają sie, więc układy pierwotnie rozdzielone mogą stać się kontaktowe i vice versa (np. poprzez odrzucenie otoczki). Przykładem ewolucji układu podwójnego, w którym doszło do zmiany jego typu jest \textbf{paradoks Algola}. Obserwując ten układ można zauważyć układ dwóch gwiazd: B – mniej masywnego olbrzyma i A – bardziej masywnego karła. Wiadomo, że mniej masywne gwiazdy ewoluują wolniej, więc jak powstał taki układ? Składnik B był dawniej bardziej masywny i szybciej opuścił ciąg główny, tym samym zaczął oddawać część swojej masy składnikowi A. Proces ten wciąż trwa. Potrafimy zidentyfikować w widmie układu \textbf{gorącą plamę}– punkt, w którym z gwiazdy-dawcy wypływa materia (punkt \(L_1\)).
+            \begin{center}
+                \includegraphics[width=6cm]{images/algol.png}
+            \end{center}
+            Innym przypadkiem jest sytuacja, gdy gwiazda-biorca jest na tyle mała, że materia wypływająca z gwiazdy-dawcy nie trafia w nią bezpośrednio, a formuje wokół niej dysk z materii – \textbf{dysk akrecyjny}. Zanim materia z dysku spadnie na gwiazdę, musi wytracić sporą część momentu pędu. W wyniku tarcia pomiędzy poszczególnymi warstwami dysku (\textbf{lepkość}), kształtuje się, w raz odległością od biorcy, rozkład momentu pędu i temperatury. Im bliżej gwiazdy tym moment pędu mniejszy, a temperatura większa. O dyskach mówi się czasami, że są to płaskie gwiazdy.
+            \begin{center}
+                \includegraphics[width=13cm]{images/accretionDisk.png}
+            \end{center}
+            W przypadku gdy gwiazdą biorcą jest biały karzeł, gwiazda neutronowa lub czarna dziura, dysk emituje spore ilości energii (grawitacyjnej) w formie promieniowania elektromagnetycznego. Moc tego promieniowania wyznaczana jest według wzoru:
+            \begin{equation}
+                L \approx \frac{GM_a}{R_a} \frac{\dd M}{\dd t}
+            \end{equation}
+            gdzie \(M_a\) i \(R_a\) to masa i promień biorcy, a \(\frac{\dd M}{\dd t} \) to tempo akrecji. \textbf{Wydajność akrecji} to stosunek \(L\) do ilości energii, która wydzieliła by się w wyniku anihilacji materii akreującej:
+            \begin{equation}
+                \eta = \frac{L}{\frac{\dd M}{\dd t} c^2  } = \frac{G}{c^2 }\frac{M_a}{R_a} 
+            \end{equation}
+            Przykładowe wartości \(\eta\): biały karzeł – \(10^{ - 4}\), gwiazda neutronowa – \(0.2\) i czarna dziura – \(0.5\). W przypadku białych karłów większość energii wypromieniowana jest w świetle widzialnym, a w przypadku gwiazd neutronowych i czarnych dziur w paśmie promieniowania X. \\
+            Częstym zjawiskiem w układach podwójnych z białymi karłami są \textbf{gwiazdy nowe} i \textbf{nowe karłowate}(zaliczane do \textbf{gwiazd kataklizmycznych}). W wyniku opadania na powierzchnie białego karła materii z drugiej gwiazdy (z dysku akrecyjnego) inicjowane są tam reakcje termojądrowe. Mają one postać wybuchu – obserwuje się gwałtowny i silny wzrost jasności – gwiazda nowa. Po krótkim czasie karzeł oczyszcza się z wodoru i jego jasność wraca do wcześniejszego poziomu. Akrecja nadal trwa więc za jakiś proces się powtórzy. Nowy karłowate także są okresowy pojaśnieniami, lecz w ich przypadku odpowiada za to dysk akrecyjny. Pod wpływem akumulacji materii na dysku rośnie temperatura w całym jego obrębie. Proces ten przyspiesza akrecje na biała karła, a to zmniejsza ilość materii oraz temperature itd. Pojaśnienie jest związane z fazą rozgrzanego dysku.\\
+            Akrecja może zachodzić nieco inaczej, gdy gwiazda-biorca charakteryzuje sie wyjątkowo silnym polem magnetycznym. Wówczas akrecja odbywać się bedzie wzdłuż linii pola, a układ nazywany jest \textbf{polarem}.
+            \begin{center}
+                \includegraphics[width=7cm]{images/polar.png}
+            \end{center}
+            Gdy biały karzeł, w wyniku przybierania na masie, przekroczy granicę Chandrasekhara, wówczas zamiast kolapsu do gwiazdy neutronowej, gwałtownie rosnące procesy termojądrowe doprowadzają do rozerwania gwiazdy. Takie zjawisko nazywa sie \textbf{supernową typu Ia}. W wybuchu uczestniczy zwykle podobna ilość materii, stąd jasność tego typu supernowych jest bardzo zbliżona i można je używać jako \textbf{świece standardowe} – do wyznaczania odległości w przestrzeni kosmicznej.\\ 
+            W przypadku akrecji materii na gwiazdę neutronową lub czarną dziurę, wewnętrzna część dysku rozgrzewa się do milionowych temperatur i świeci w zakresie promieniowania X. W tym przypadku wyróżnia się dwa rodzaju układów ze względu na masę gwiazdy-dawcy:
+            \begin{itemize}
+                \item \textbf{LMXB} – gdy masa dawcy jest porównywalna z masą słońca przepływ materii odbywa się w formie strugi wypływającej z \(L_1\). Inaczej niż w układach z białymi karłami gwiazda-dawca jest ogrzewany przez gorący dysk oraz z biegunów gwiazdy-biorcy wychodzą skolimowane wiązki materii zwane \textbf{dżetami}.
+                \item \textbf{HMXB} – gdy masa dawcy jest znacznie większa, zasilanie biorcy umożliwia obfity wiatr gwiazdowy.
+            \end{itemize}
+            W przypadku tych układów można też wyróżnić odpowiedniki nowych (\textbf{nowe rentgenowskie}) i nowych karłowatych (\textbf{burstery}). W obu przypadkach wybuchy są bardziej dynamiczne niż ich białokarłowych odpowiednikach. Jedyną możliwością odróżnienia tego czy w centrum znajduje się gwiazda neutronowa czy czarna dziura jest pomiar masy.
+        \subsection{Gwiazdy pulsujące}
+            \textbf{Gwiazdy pulsujące} to takie, których jasność ulega cyklicznym zmianą. Przyczyn zmienności gwiazd jest bardzo wiele. Pierwszą odkrytą była \(\delta\)–Cephei, od której wzięła się nazwa podkategorii gwiazd zmiennych – \textbf{cefeidy}. W przypadku tej gwiazdy za zmianę jasności odpowiedzialne są naprzemienne procesy rozdymania się i kurczenia, które skutkują względnymi zmianami jasności do 15\%. Taka sama jest przyczyna zmiany jasności wszystkich gwiazd pulsujących, jednak wielkość zmian może być zarówno bardzo wyraźna jak i subtelna. Pulsacje w gwiazdach mogą być bardzo złożone, w szczególności w tym samym czasie niektóre fragmenty gwiazdy mogą się kurczyć, a inne rozdymać. Możliwe jest też pulsowanie \textbf{nieradialne} czyli takie, w którym w tej samej odległości od środka dopuszczalny jest ruch zarówno do środka, jak i na zewnątrz. Badanie tych wszystkich subtelności zajmuje się \textbf{asterosejsmologia}.\\
+            Gwiazdy pulsacyjne zajmują konkretny obszar na wykresie H-R nazywany \textbf{pasem niestabilności pulsacyjnej gwiazd}, a sama podatność na pulsowanie wykazywana jest tylko na pewnych etapach ewolucji. Efekt pulsowania bierze się z faktu, że w odpowiednich warunkach duża ilość promieniowania może być pochłania w celu jonizacji metali (wiąże się to ze wzrostem \(\kappa\) – współczynnika absorbcji promieniowania), helu i wodoru. Gdy gwiazda się kurczy właśnie w zjonizowanych pierwiastkach magazynowana jest energia, która zostanie użyta w etapie rozkurczania (do pokonywania siły grawitacji).\\
+            Gwiazdy pulsujące, a w szczególności cefeidy, t
 \end{document}
